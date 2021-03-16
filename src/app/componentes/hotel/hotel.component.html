@@ -1,0 +1,49 @@
+
+<div class="Container row" style="background-color: #eeeeee; padding-top: 10px" >
+    <div class="col-lg-3" style="margin-left: 2%">
+        <div class="" style="background-color: #eeeeee; margin-left: 1%; ">
+           <h5 class="center" style="font-size: 40px;  color: #989898;">Filtros</h5>
+        </div>
+        <div class="" style="background-color: white; margin-left: 2%; box-shadow: 0px 0px 2px 2px #999999; ">
+        <!-- sombras: 1:arriba y abajo 2:de lado 3:difuminado 4:expansion-->
+            <div class="row" style="height: 40px; ">
+                <div class="col-lg-3">Icono1</div>
+                <p class="col-lg-9" >Nomre del hotel</p>
+            </div>
+            <hr color="green" width="80% ">
+            <div class="row" style=" height: 150px; ">
+            <!--icono-->
+                <button class="btn col-lg-2" style="background-color: black; height: 50px;" type=" submit">     </button>
+                <nav class="navbar col-lg-10" >
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-10" type="Nombre del hotel" placeholder="Nombre del hotel" aria-label="Nombre del hotel">
+                    </form>
+                </nav>
+            </div >
+            <div class="row">
+                <hr color="green" width="80% ">
+                <div class="col-lg-3"> Icono2 </div>
+                <p class="col-lg-9">Estrellas</p>
+            </div>
+            <div class="row" style=" height: 300px; ">
+                <hr color="green" width="80% ">
+                <div class="col-lg-3"> Icono3 </div>
+                <p class="col-lg-9">Todas las estrellas</p>
+            </div>
+        </div> 
+    </div>
+<div class="container bcontent row col-lg-8">
+    <div class="card col-lg-12" style=" height: 250px" *ngFor="let hotel of hoteles">
+        <div class="row no-gutters">
+            <div class="col-sm-5" style="display: flex; align-items: center;">
+                <img class="card-img"  src="../../../assets/images/hotels/{{hotel.image}}" alt="Suresh Dasari Card">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title">{{hotel.name}}</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
